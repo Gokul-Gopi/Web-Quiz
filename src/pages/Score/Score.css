@@ -1,0 +1,53 @@
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score .user-score-details{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+    width: 50vw;
+    height: 20rem;
+}
+
+.score .score-percentage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.score .score-percentage span:nth-child(1){
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.score .score-percentage span:nth-child(2){
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.score .other-details div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+.score .other-details div span:nth-child(1){
+    font-size: 1.5rem;
+}
+
+
+.score .other-details div span:nth-child(2){
+    font-size: 2rem;
+}
+
+.score .no-score{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}

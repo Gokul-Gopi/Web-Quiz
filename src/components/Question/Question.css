@@ -1,0 +1,39 @@
+.quiz-question{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    width:40rem;
+}
+
+.quiz-question .question{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.quiz-question .options{
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.quiz-question .options .option{
+    display: flex;
+    align-items: center;
+}
+
+.quiz-question .options .option input{
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.quiz-question .next-btn{
+    width: 100%;
+    text-align: right;
+}
+
+.quiz-question .next-btn button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
