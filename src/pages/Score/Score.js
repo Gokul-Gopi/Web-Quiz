@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import { Navigate, useNavigate } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 import VerifyAnswer from '../../components/VerifyAnswer/VerifyAnswer'
 import { useQuiz } from '../../context/quizContext'
 import '../Score/Score.css'
 
 const Score = () => {
-    const { state, dispatch } = useQuiz()
+    const { state } = useQuiz()
     const [quizFinished, setQuizFinished] = useState(false)
     const [scoreDetails, setScoreDetails] = useState({})
+    const navigate = useNavigate()
+
+    const onClickHandler = () => {
+        navigate('/')
+        window.location.reload()
+    }
 
     useEffect(() => {
         if (state.currentQuesIndex !== state.currentQuiz?.questions?.length - 1) {
@@ -56,15 +62,16 @@ const Score = () => {
                     </div>
 
                     <div className='answers-to-ques'>
-                        <h2>Answers</h2>
+                        <h2>Correct answers</h2>
                         {state.currentQuiz.questions.map((ques, index) => {
-                            return <VerifyAnswer key={index} question={ques} userAnsIndex={state.userAnswers[index + 1].answer} />
+                            return <VerifyAnswer key={index} question={ques} userAnsIndex={state.userAnswers[index + 1]?.answer} />
                         })}
                     </div>
                 </> :
                 <div className='no-score'>No Scores to display..</div>
             }
 
+            <button className='back-to-home-btn' onClick={() => onClickHandler()}>Back to home</button>
         </div>
     )
 }

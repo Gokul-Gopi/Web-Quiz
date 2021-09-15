@@ -8,7 +8,7 @@ const Header = () => {
         <div className='header'>
             <FaLightbulb style={{ marginRight: '5px', fontSize: '1.7rem' }} />
             <Link to='/' style={{ textDecoration: 'none', color: 'initial' }}>
-                <h2>Web Quiz</h2>
+                <h2>Web Quizz</h2>
             </Link>
         </div>
     )

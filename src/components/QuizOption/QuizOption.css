@@ -1,11 +1,37 @@
 .quiz-option{
-    border: 1px solid black;
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 1px rgba(6,182,212,0.3);
+}
+
+.quiz-option .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: 0.2s all;
+}
+
+.quiz-option .overlay:hover{
+    opacity: 1;
 }
 
 .quiz-option{
-    width: 13rem;
+    width: 14rem;
+    height: 14rem;
 }
 
 .quiz-option img{
-    width: 13rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }

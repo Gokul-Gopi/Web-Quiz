@@ -12,7 +12,8 @@ export const initialState = {
 
 export const quizReducer = (state, action) => {
     switch (action.type) {
-        case 'SET_QUIZ': return { ...state, currentQuiz: action.payload }
+        case 'SET_QUIZ':
+            return { ...state, currentQuiz: action.payload }
 
         case 'SET_CURRENT_QUES_OPTIONS': return { ...state, currentQues: action.payload }
 

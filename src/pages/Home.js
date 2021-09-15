@@ -6,7 +6,11 @@ const Home = () => {
     return (
         <div className='home'>
             <Link to={`quiz/${1}`} >
-                <QuizOption img={'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'} />
+                <QuizOption img={'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'} quizName='Javascript' />
+            </Link>
+
+            <Link to={`quiz/${2}`} >
+                <QuizOption img={'https://img2.pngio.com/css3-png-download-css-icon-transparent-png-kindpng-css-logo-png-860_913.png'} quizName='CSS' />
             </Link>
         </div>
     )

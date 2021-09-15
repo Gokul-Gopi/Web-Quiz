@@ -1,7 +1,7 @@
 import React from 'react'
 import '../VerifyAnswer/VerifyAnswer.css'
 
-const VerifyAnswer = ({ question, userAnsIndex }) => {
+const VerifyAnswer = ({ question }) => {
     return (
         <div className='verify-answer'>
             <div className='question'>

@@ -1,6 +1,6 @@
 export const dataBase = [
     {
-        id: 1,
+        id: '1',
         quizName: 'Javascript Quiz',
         questions: [
             {
@@ -123,7 +123,7 @@ export const dataBase = [
     },
 
     {
-        id: 2,
+        id: "2",
         quizName: 'CSS Quiz',
         questions: [
             {

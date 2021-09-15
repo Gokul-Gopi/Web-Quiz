@@ -16,4 +16,10 @@ body{
   font-family: 'Hind Siliguri', sans-serif;
   width: 100%;
   min-height: 100vh;
+  background-color: #f5feff;
+}
+
+
+:root{
+  --primary-color:#06B6D4;
 }

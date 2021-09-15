@@ -8,13 +8,11 @@ import { useQuiz } from '../../context/quizContext'
 const Quiz = () => {
     const { quizID } = useParams()
     const { state, dispatch } = useQuiz()
-    const quiz = dataBase.find(quiz => quiz.id = quizID)
+    const [quiz] = dataBase.filter(quiz => quiz.id === quizID)
+    console.log(quizID)
 
     useEffect(() => {
         dispatch({ type: 'SET_QUIZ', payload: quiz })
-        state.currentQuesIndex === 0 && dispatch({
-            type: 'SET_CURRENT_QUES_OPTIONS', payload: quiz.questions[state.currentQuesIndex]
-        })
     }, [])
 
 

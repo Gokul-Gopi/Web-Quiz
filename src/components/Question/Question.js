@@ -5,10 +5,11 @@ import { useQuiz } from '../../context/quizContext'
 import { Link } from 'react-router-dom'
 
 const Question = ({ questions, questionIndex }) => {
-
     const { state, dispatch } = useQuiz()
     const [disableState, setDisableState] = useState(false)
     const [checkedState, setCheckedState] = useState(new Array(4).fill(false))
+
+    console.log(state.userAnswers)
 
     useEffect(() => {
         setDisableState(false);
