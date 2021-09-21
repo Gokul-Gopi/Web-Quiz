@@ -243,5 +243,127 @@ export const dataBase = [
 
 
         ]
-    }
+    },
+    {
+        id: '3',
+        quizName: 'React Quiz',
+        questions: [
+            {
+                question: 'What of the following is used in React.js to increase performance?',
+                options: [
+                    {
+                        option: 'Original DOM',
+                        isRight: false
+                    },
+                    {
+                        option: 'Virtual DOM',
+                        isRight: true
+                    },
+                    {
+                        option: 'Both A and B.',
+                        isRight: false
+                    },
+                    {
+                        option: 'None of the above.',
+                        isRight: false
+                    },
+                ],
+                points: 5
+            },
+
+            {
+                question: ' How many numbers of elements a valid react component can return?',
+                options: [
+                    {
+                        option: '1',
+                        isRight: true
+                    },
+                    {
+                        option: '2',
+                        isRight: false
+                    },
+                    {
+                        option: '4',
+                        isRight: false
+                    },
+                    {
+                        option: '5',
+                        isRight: false
+                    },
+                ],
+                points: 5
+            },
+
+            {
+                question: ' Which of the following is used to pass data to a component from outside in React.js?',
+                options: [
+                    {
+                        option: 'SetState',
+                        isRight: false
+                    },
+                    {
+                        option: 'Render with arguments',
+                        isRight: false
+                    },
+                    {
+                        option: 'Props',
+                        isRight: true
+                    },
+                    {
+                        option: 'PropTypes',
+                        isRight: false
+                    },
+                ],
+                points: 5
+            },
+
+            {
+                question: 'Which of the following best defines the "key" prop?',
+                options: [
+                    {
+                        option: '"Key" prop is used to look pretty, and there is no benefit whatsoever.',
+                        isRight: false
+                    },
+                    {
+                        option: 'Key" prop is a way for React to identify a newly added item in a list and compare it during the "diffing" algorithm.',
+                        isRight: true
+                    },
+                    {
+                        option: 'It is one of the attributes in HTML.',
+                        isRight: false
+                    },
+                    {
+                        option: 'It is NOT commonly used in an array.',
+                        isRight: false
+                    },
+                ],
+                points: 5
+            },
+
+            {
+                question: 'What is the use of the create-react-app command in the React.js application?',
+                options: [
+                    {
+                        option: 'It is used to update a React app.',
+                        isRight: false
+                    },
+                    {
+                        option: 'It is used to create a new React app.',
+                        isRight: true
+                    },
+                    {
+                        option: 'It is used to install dependencies.',
+                        isRight: false
+                    },
+                    {
+                        option: 'None of the above.',
+                        isRight: false
+                    },
+                ],
+                points: 5
+            },
+
+
+        ]
+    },
 ]

@@ -12,6 +12,10 @@ const Home = () => {
             <Link to={`quiz/${2}`} >
                 <QuizOption img={'https://img2.pngio.com/css3-png-download-css-icon-transparent-png-kindpng-css-logo-png-860_913.png'} quizName='CSS' />
             </Link>
+
+            <Link to={`quiz/${3}`} >
+                <QuizOption img={'https://www.pngitem.com/pimgs/m/383-3839731_reactjs-react-js-logo-svg-hd-png-download.png'} quizName='React' />
+            </Link>
         </div>
     )
 }
